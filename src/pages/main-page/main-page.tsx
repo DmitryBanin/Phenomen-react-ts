@@ -1,6 +1,6 @@
-import './main-screen-style.css';
+import './main-page-style.css';
 
-function MainsScreen(): JSX.Element {
+function MainPage(): JSX.Element {
   return (
     <div className='wrapper'>
       <header className='header'>
@@ -350,4 +350,4 @@ function MainsScreen(): JSX.Element {
   );
 }
 
-export default MainsScreen;
+export default MainPage;
