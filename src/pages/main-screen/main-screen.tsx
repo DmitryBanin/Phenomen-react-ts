@@ -1,6 +1,6 @@
 import './main-screen-style.css';
 
-function Main(): JSX.Element {
+function MainsScreen(): JSX.Element {
   return (
     <div className='wrapper'>
       <header className='header'>
@@ -17,7 +17,7 @@ function Main(): JSX.Element {
             <span></span>
           </a>
 
-          {/* <!-- на mobile-menu добавлять класс mobile-menu--active --> */}
+          {/* на mobile-menu добавлять класс mobile-menu--active */}
           <div className='mobile-menu'>
             <nav className='mobile-menu__nav'>
               <ul className='mobile-menu__list'>
@@ -131,7 +131,7 @@ function Main(): JSX.Element {
                     className='header__link-arrow header__link-arrow-up'
                   />
                 </div>
-                {/* <!-- выпадающее меню --> */}
+                {/* выпадающее меню */}
                 <ul className='menu__options menu__options-fund'>
                   <li className='menu__option'>
                     <a
@@ -180,7 +180,7 @@ function Main(): JSX.Element {
                     className='header__link-arrow header__link-arrow-up'
                   />
                 </div>
-                {/* <!-- выпадающее меню --> */}
+                {/* выпадающее меню */}
                 <ul className='menu__options menu__options-about'>
                   <li className='menu__option'>
                     <a
@@ -350,4 +350,4 @@ function Main(): JSX.Element {
   );
 }
 
-export default Main;
+export default MainsScreen;
