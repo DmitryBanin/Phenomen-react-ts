@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { Outlet, NavLink, Link} from 'react-router-dom';
+import { Outlet, NavLink, Link } from 'react-router-dom';
 
 function Layout() {
   return (
@@ -198,7 +198,7 @@ function Layout() {
           </div>
         </header>
 
-        <main>
+        <main className='main'>
           <Outlet />
         </main>
         <footer className='footer'>
