@@ -52,11 +52,9 @@ function PortfolioPage() {
 
             <li className='token__item'>
               <div className='token__item-block'>
-                <img
-                  src='../images/logo/1-mina.svg'
-                  alt='logo'
-                  className='token__item-logo'
-                />
+                <a href='#'>
+                  <img src='../../' alt='logo' className='token__item-logo' />
+                </a>
               </div>
               <div className='token__item-block'>
                 <p className='token__name-column'>Early-Stage Token</p>
@@ -68,11 +66,13 @@ function PortfolioPage() {
 
             <li className='token__item'>
               <div className='token__item-block'>
-                <img
-                  src='../images/logo/2-clover.svg'
-                  alt='logo'
-                  className='token__item-logo'
-                />
+                <a href='#'>
+                  <img
+                    src='../../../public/images/funds-logo/mina'
+                    alt='logo'
+                    className='token__item-logo'
+                  />
+                </a>
               </div>
               <div className='token__item-block'>
                 <p className='token__name-column'>Website</p>

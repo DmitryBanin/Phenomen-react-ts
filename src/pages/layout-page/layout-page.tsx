@@ -9,8 +9,8 @@ function Layout() {
           <div className='header__container'>
             <NavLink to='/' className='header__logo'>
               <img
-                src='../images/logo/phenomen-logo.svg'
-                alt='Phenomen-logo'
+                src='../images/phenomen-logo.svg'
+                alt='Phenomen logo'
                 className='header__logo-link'
               />
             </NavLink>
