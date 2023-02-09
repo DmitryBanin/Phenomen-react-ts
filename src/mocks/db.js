@@ -31,4 +31,25 @@ const persons = [
   },
 ];
 
-export { persons };
+const summeryOfTerms = 
+  {
+    launch: 'March 2019',
+    minimumInvestment: '1 million dollars',
+    investorType: 'Qualifying buyers only',
+    controlBoard: '2% of invested capital annually',
+    payForPerformance: '30% to 40% of the net internal rate of return',
+};
+  
+const phenomenSectors = [
+  {
+    title: 'Blockchain',
+    desccription:
+      'Every day humanity generates about 2.5 quintillion bytes of different data. If data analytics answers questions about the past, Data Science literally looks to the future. With big data, applications are developed and models are created to better understand societies and their needs. Data science opens the door to the future',
+  },
+];
+
+const phenomenExpertise
+
+const portfolio
+
+export { persons, summeryOfTerms, phenomenSectors };

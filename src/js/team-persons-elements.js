@@ -1,4 +1,4 @@
-import { persons } from '../mocks/data.js';
+import { persons } from '../mocks/db.js';
 
 const teamsBoxElement = document.querySelector('.teams__box');
 
