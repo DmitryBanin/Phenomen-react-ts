@@ -9,10 +9,12 @@ import PortfolioPage from './pages/portfolio-page/portfolio-page';
 import TeamPage from './pages/team-page/team-page';
 import ContactPage from './pages/contact-page/contact-page';
 import Error404Page from './pages/error-404-page/error-404-page';
+import ScrollToTop from './utils';
 
 function App(): JSX.Element {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path='/' element={<Layout />}>
           <Route index element={<MainPage />} />
