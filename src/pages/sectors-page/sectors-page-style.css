@@ -109,7 +109,7 @@
   font-size: 20px;
   line-height: 27.2px;
 }
-.active,
+.collapsible-active,
 .collapsible:hover {
   background-color: transparent;
   color: #f3b932;
@@ -122,7 +122,7 @@
   margin-right: 4px;
 }
 
-.active::after {
+.collapsible-active::after {
   content: url('../../../public/images/line.svg');
 }
 

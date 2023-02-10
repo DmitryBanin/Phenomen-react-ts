@@ -1,9 +1,9 @@
 const collapsibleELements = document.getElementsByClassName('collapsible');
-const contentELements = document.getElementsByClassName('content');
+// const contentELements = document.getElementsByClassName('content');
 
 for (let i = 0; i < collapsibleELements.length; i++) {
   collapsibleELements[i].addEventListener('click', function () {
-    this.classList.toggle('active');
+    this.classList.toggle('collapsible-active');
     this.classList.toggle('addMarginBottom');
 
     const collapsible = this.nextElementSibling;

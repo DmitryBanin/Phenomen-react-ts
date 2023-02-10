@@ -1,5 +1,18 @@
 import { Fragment } from 'react';
-import { Outlet, NavLink, Link } from 'react-router-dom';
+import { Outlet, NavLink } from 'react-router-dom';
+
+type StyleForNavLinkProps = {
+  isActive: Boolean;
+};
+
+const getStyleForNavLink = ({ isActive }: StyleForNavLinkProps) =>
+  isActive
+    ? {
+        cursor: 'default',
+        textDecoration: 'none',
+        color: 'inherit',
+      }
+    : undefined;
 
 function Layout() {
   return (
@@ -7,7 +20,7 @@ function Layout() {
       <div className='wrapper'>
         <header className='header'>
           <div className='header__container'>
-            <NavLink to='/' className='header__logo'>
+            <NavLink to='/' style={getStyleForNavLink} className='header__logo'>
               <img
                 src='../images/phenomen-logo.svg'
                 alt='Phenomen logo'
@@ -119,7 +132,11 @@ function Layout() {
             <nav className='header__nav'>
               <ul className='header__list'>
                 <li className='header__list-item'>
-                  <NavLink to='/invest' className='header__link'>
+                  <NavLink
+                    to='/invest'
+                    style={getStyleForNavLink}
+                    className='header__link'
+                  >
                     INVEST
                   </NavLink>
                 </li>
@@ -142,24 +159,40 @@ function Layout() {
                   {/* выпадающее меню */}
                   <ul className='menu__options menu__options-fund'>
                     <li className='menu__option'>
-                      <NavLink to='/sectors' className='menu__option-link'>
+                      <NavLink
+                        to='/sectors'
+                        style={getStyleForNavLink}
+                        className='menu__option-link'
+                      >
                         SECTORS
                       </NavLink>
                     </li>
                     <li className='menu__option'>
-                      <NavLink to='/expertise' className='menu__option-link'>
+                      <NavLink
+                        to='/expertise'
+                        style={getStyleForNavLink}
+                        className='menu__option-link'
+                      >
                         EXPERTISE
                       </NavLink>
                     </li>
                     <li className='menu__option'>
-                      <NavLink to='/strategies' className='menu__option-link'>
+                      <NavLink
+                        to='/strategies'
+                        style={getStyleForNavLink}
+                        className='menu__option-link'
+                      >
                         STRATEGIES
                       </NavLink>
                     </li>
                   </ul>
                 </li>
                 <li className='header__list-item'>
-                  <NavLink to='/portfolio' className='header__link'>
+                  <NavLink
+                    to='/portfolio'
+                    style={getStyleForNavLink}
+                    className='header__link'
+                  >
                     PORTFOLIO
                   </NavLink>
                 </li>
@@ -182,12 +215,20 @@ function Layout() {
                   {/* выпадающее меню */}
                   <ul className='menu__options menu__options-about'>
                     <li className='menu__option'>
-                      <NavLink to='/team' className='menu__option-link'>
+                      <NavLink
+                        to='/team'
+                        style={getStyleForNavLink}
+                        className='menu__option-link'
+                      >
                         TEAM
                       </NavLink>
                     </li>
                     <li className='menu__option'>
-                      <NavLink to='/contact' className='menu__option-link'>
+                      <NavLink
+                        to='/contact'
+                        style={getStyleForNavLink}
+                        className='menu__option-link'
+                      >
                         CONTACTS
                       </NavLink>
                     </li>
@@ -210,7 +251,11 @@ function Layout() {
                   <h4 className='footer__nav-item-title'>INVEST</h4>
                 </li>
                 <li className='footer__nav-item'>
-                  <NavLink to='/portfolio' className='footer__link'>
+                  <NavLink
+                    to='/portfolio'
+                    style={getStyleForNavLink}
+                    className='footer__link'
+                  >
                     PORTFOLIO
                   </NavLink>
                 </li>
@@ -228,17 +273,29 @@ function Layout() {
                   <h4 className='footer__nav-item-title'>FUND</h4>
                 </li>
                 <li className='footer__nav-item'>
-                  <NavLink to='/expertise' className='footer__link'>
+                  <NavLink
+                    to='/expertise'
+                    style={getStyleForNavLink}
+                    className='footer__link'
+                  >
                     EXPERTISE
                   </NavLink>
                 </li>
                 <li className='footer__nav-item'>
-                  <NavLink to='/sectors' className='footer__link'>
+                  <NavLink
+                    to='/sectors'
+                    style={getStyleForNavLink}
+                    className='footer__link'
+                  >
                     SECTORS
                   </NavLink>
                 </li>
                 <li className='footer__nav-item'>
-                  <NavLink to='/strategies' className='footer__link'>
+                  <NavLink
+                    to='/strategies'
+                    style={getStyleForNavLink}
+                    className='footer__link'
+                  >
                     STRATEGIES
                   </NavLink>
                 </li>
@@ -248,12 +305,20 @@ function Layout() {
                   <h4 className='footer__nav-item-title'>ABOUT</h4>
                 </li>
                 <li className='footer__nav-item'>
-                  <NavLink to='/team' className='footer__link'>
+                  <NavLink
+                    to='/team'
+                    style={getStyleForNavLink}
+                    className='footer__link'
+                  >
                     TEAM
                   </NavLink>
                 </li>
                 <li className='footer__nav-item'>
-                  <NavLink to='/contact' className='footer__link'>
+                  <NavLink
+                    to='/contact'
+                    style={getStyleForNavLink}
+                    className='footer__link'
+                  >
                     CONTACTS
                   </NavLink>
                 </li>
