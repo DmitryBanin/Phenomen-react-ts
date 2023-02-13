@@ -1,18 +1,7 @@
 import { Fragment } from 'react';
 import { Outlet, NavLink } from 'react-router-dom';
-
-type StyleForNavLinkProps = {
-  isActive: Boolean;
-};
-
-const getStyleForNavLink = ({ isActive }: StyleForNavLinkProps) =>
-  isActive
-    ? {
-        cursor: 'default',
-        textDecoration: 'none',
-        color: 'inherit',
-      }
-    : undefined;
+import { getStyleForNavLink } from '../../utils/get-style-for-nav-link';
+import Logo from '../../components/logo/logo';
 
 function Layout() {
   return (
@@ -20,18 +9,10 @@ function Layout() {
       <div className='wrapper'>
         <header className='header'>
           <div className='header__container'>
-            <NavLink to='/' style={getStyleForNavLink} className='header__logo'>
-              <img
-                src='../images/phenomen-logo.svg'
-                alt='Phenomen logo'
-                className='header__logo-link'
-              />
-            </NavLink>
-
+            <Logo />
             <a href='#' className='burger__button'>
               <span></span>
             </a>
-
             {/* на mobile-menu добавлять класс mobile-menu--active */}
             <div className='mobile-menu'>
               <nav className='mobile-menu__nav'>
@@ -128,7 +109,6 @@ function Layout() {
                 </ul>
               </nav>
             </div>
-
             <nav className='header__nav'>
               <ul className='header__list'>
                 <li className='header__list-item'>
