@@ -23,7 +23,7 @@
   line-height: 1.25;
   color: #f6f6f6;
 }
-.header__link:hover {
+.header__list-item:hover .header__link {
   color: #f3b932;
 }
 .header__link-arrow {

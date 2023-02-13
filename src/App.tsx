@@ -24,7 +24,7 @@ function App(): JSX.Element {
           <Route path='/strategies' element={<StrategiesPage />} />
           <Route path='/portfolio' element={<PortfolioPage />} />
           <Route path='/team' element={<TeamPage />} />
-          <Route path='/contact' element={<ContactPage />} />
+          <Route path='/contacts' element={<ContactPage />} />
           <Route path='*' element={<Error404Page />} />
         </Route>
       </Routes>
