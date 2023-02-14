@@ -1,9 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import { getStyleForNavLink } from '../../utils/get-style-for-nav-link';
-import FundDropDownMenu from '../../components/fund-drop-down-menu/fund-drop-down-menu';
-import AboutDropDownMenu from '../../components/about-drop-down-menu/about-drop-down-menu';
+import DropDownMenuItems from '../drop-down-menu-items/drop-down-menu-items';
+import { FundDropDownMenuList, AboutDropDownMenuList } from '../../const';
 
 function HeaderNav() {
+
   return (
     <nav className='header__nav'>
       <ul className='header__list'>
@@ -16,7 +17,7 @@ function HeaderNav() {
             INVEST
           </NavLink>
         </li>
-        <li className='header__list-item'>
+        <li className='header__list-item show'>
           <div className='header__list-item-arrow'>
             <a href='#' className='header__link'>
               FUND
@@ -33,7 +34,8 @@ function HeaderNav() {
             />
           </div>
           {/* выпадающее меню */}
-          <FundDropDownMenu />
+          {/* <FundDropDownMenu /> */}
+          <DropDownMenuItems dropDownMenuData={FundDropDownMenuList} />
         </li>
         <li className='header__list-item'>
           <NavLink
@@ -61,7 +63,8 @@ function HeaderNav() {
             />
           </div>
           {/* выпадающее меню */}
-          <AboutDropDownMenu />
+          {/* <AboutDropDownMenu /> */}
+          <DropDownMenuItems dropDownMenuData={AboutDropDownMenuList} />
         </li>
       </ul>
     </nav>

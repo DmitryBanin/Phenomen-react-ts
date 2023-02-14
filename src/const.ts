@@ -12,17 +12,9 @@ export enum AppRoute {
 }
 //
 
-// пока не используется
-export enum FundDropDownMenuType {
-  Sectors = 'SECTORS',
-  Expertise = 'EXPERTISE',
-  Strategies = 'STRATEGIES',
-}
+export const FundDropDownMenuList = ['SECTORS','EXPERTISE', 'STRATEGIES']
+
 //
 
-// пока не используется
-export enum AboutDropDownMenuType {
-  Team = 'TEAM',
-  Contacts = 'CONTACTS',
-}
+export const AboutDropDownMenuList = ['TEAM', 'CONTACTS'];
 //
