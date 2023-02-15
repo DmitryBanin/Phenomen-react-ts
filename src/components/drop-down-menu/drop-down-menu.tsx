@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { getStyleForNavLink } from '../../utils/get-style-for-nav-link';
 
-function DropDownMenu({ data }) {
+function DropDownMenu({ data }: any) {
   
   return (
       <li className='menu__option'>
