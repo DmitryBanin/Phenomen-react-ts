@@ -1,4 +1,3 @@
-
 import './invest-page-style.css';
 import { Fragment } from 'react';
 
@@ -125,7 +124,6 @@ function InvestPage() {
                   type='checkbox'
                   name='c'
                   value='Cryptocurrency mining'
-                  checked
                 />
                 <span>Cryptocurrency mining</span>
               </label>

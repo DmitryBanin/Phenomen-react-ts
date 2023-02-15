@@ -10,6 +10,7 @@ import TeamPage from './pages/team-page/team-page';
 import ContactPage from './pages/contact-page/contact-page';
 import Error404Page from './pages/error-404-page/error-404-page';
 import ScrollToTop from './utils/scroll-to-top';
+import { sectorsData, expertiseData } from './mocks/db';
 
 function App(): JSX.Element {
   return (
@@ -19,8 +20,14 @@ function App(): JSX.Element {
         <Route path='/' element={<Layout />}>
           <Route index element={<MainPage />} />
           <Route path='/invest' element={<InvestPage />} />
-          <Route path='/sectors' element={<SectorsPage />} />
-          <Route path='/expertise' element={<ExpertisePage />} />
+          <Route
+            path='/sectors'
+            element={<SectorsPage sectorsData={sectorsData} />}
+          />
+          <Route
+            path='/expertise'
+            element={<ExpertisePage expertiseData={expertiseData} />}
+          />
           <Route path='/strategies' element={<StrategiesPage />} />
           <Route path='/portfolio' element={<PortfolioPage />} />
           <Route path='/team' element={<TeamPage />} />

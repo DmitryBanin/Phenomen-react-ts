@@ -3,7 +3,7 @@ import { getStyleForNavLink } from '../../utils/get-style-for-nav-link';
 import Logo from '../../components/logo/logo';
 import HeaderNav from '../../components/header-nav/header-nav';
 
-function Layout() {
+function Layout(): JSX.Element {
   return (
     <div className='wrapper'>
       <header className='header'>

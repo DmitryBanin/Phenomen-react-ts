@@ -1,4 +1,4 @@
-const persons = [
+export const persons = [
   {
     src: '../images/persons/1-narek-akopyan.png',
     name: 'NAREK AKOPYAN',
@@ -31,7 +31,7 @@ const persons = [
   },
 ];
 
-const summeryOfTerms = {
+export const summeryOfTerms = {
   launch: 'March 2019',
   minimumInvestment: '1 million dollars',
   investorType: 'Qualifying buyers only',
@@ -39,7 +39,7 @@ const summeryOfTerms = {
   payForPerformance: '30% to 40% of the net internal rate of return',
 };
 
-const phenomenSectors = [
+export const sectorsData = [
   {
     title: 'Blockchain',
     desccription:
@@ -72,7 +72,7 @@ const phenomenSectors = [
   },
 ];
 
-const phenomenExpertise = [
+export const expertiseData = [
   {
     title: 'Whitepaper',
     desccription:
@@ -135,7 +135,7 @@ const phenomenExpertise = [
   },
 ];
 
-const portfolio = [
+export const portfolio = [
   {
     id: 1,
     name: '../../../public/images/funds-logo/mina.svg',
@@ -315,10 +315,3 @@ const portfolio = [
   },
 ];
 
-export {
-  persons,
-  summeryOfTerms,
-  phenomenSectors,
-  phenomenExpertise,
-  portfolio,
-};
