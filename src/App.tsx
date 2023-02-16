@@ -8,7 +8,7 @@ import StrategiesPage from './pages/strategies-page/strategies-page';
 import PortfolioPage from './pages/portfolio-page/portfolio-page';
 import TeamPage from './pages/team-page/team-page';
 import ContactPage from './pages/contact-page/contact-page';
-import Error404Page from './pages/error-404-page/error-404-page';
+import ErrorPage from './pages/error-page/error-page';
 import ScrollToTop from './utils/scroll-to-top';
 import { sectorsData, expertiseData } from './mocks/db';
 
@@ -32,8 +32,8 @@ function App(): JSX.Element {
           <Route path='/portfolio' element={<PortfolioPage />} />
           <Route path='/team' element={<TeamPage />} />
           <Route path='/contacts' element={<ContactPage />} />
-          <Route path='*' element={<Error404Page />} />
         </Route>
+        <Route path='*' element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,0 +1,30 @@
+.error__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.error__title {
+  font-family: 'NeoGram Extended ExtraBold', 'Arial';
+  font-size: 125px;
+  color: #f3b932;
+  margin-bottom: 50px;
+}
+
+.error__desc {
+  font-family: 'NeoGram Condensed Regular', 'Arial';
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.error__link {
+  font-family: 'NeoGram Condensed Regular', 'Arial';
+  font-size: 25px;
+  color: #f3b932;
+  text-decoration: underline;
+}
+
+.error__link:active {
+  color: #ffff;
+}
