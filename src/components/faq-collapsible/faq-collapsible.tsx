@@ -1,20 +1,20 @@
 import { Fragment, useState, useRef } from 'react';
 
-type collapsibleProps = {
-  collapsible: {
+type FaqCollapsibleProps = {
+  data: {
     title: string;
     desccription: string;
   };
 };
 
-function FaqCollapsible({ collapsible }: collapsibleProps): JSX.Element {
-  const { title, desccription } = collapsible;
+function FaqCollapsible({ data }: FaqCollapsibleProps): JSX.Element {
+  const { title, desccription } = data;
 
-  const [isOpen, setOPen] = useState(false);
+  const [isOpen, setOpen] = useState(false);
   const contentRef: any = useRef(null);
 
   const handleClick = () => {
-    setOPen(!isOpen);
+    setOpen(!isOpen);
   };
 
   return (

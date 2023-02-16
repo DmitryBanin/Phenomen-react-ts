@@ -39,7 +39,7 @@ export const summeryOfTerms = {
   payForPerformance: '30% to 40% of the net internal rate of return',
 };
 
-export const sectorsData = [
+export const sectorsCollapsibleData = [
   {
     title: 'Blockchain',
     desccription:
@@ -72,7 +72,7 @@ export const sectorsData = [
   },
 ];
 
-export const expertiseData = [
+export const expertiseCollapsibleData = [
   {
     title: 'Whitepaper',
     desccription:
@@ -135,17 +135,17 @@ export const expertiseData = [
   },
 ];
 
-export const portfolio = [
+export const portfolioData = [
   {
     id: 1,
-    name: '../../../public/images/funds-logo/mina.svg',
+    src: './images/funds-logo/mina.svg',
     type: 'Early-Stage Token',
     sector: 'Infrastructure',
     url: 'https://minaprotocol.com/ru/',
   },
   {
     id: 2,
-    name: '../../../public/images/funds-logo/clv.svg',
+    src: './images/funds-logo/clv.svg',
     type: 'Website',
     sector:
       'Clover provides a foundation layer for DeFi applications to seamlessly operate on.',
@@ -153,126 +153,126 @@ export const portfolio = [
   },
   {
     id: 3,
-    name: '../../../public/images/funds-logo/covalent.svg',
+    src: './images/funds-logo/covalent.svg',
     type: 'Early-Stage Token',
     sector: 'DeFi',
     url: 'https://www.covalenthq.com/',
   },
   {
     id: 4,
-    name: '../../../public/images/funds-logo/contrefuge.svg',
+    src: './images/funds-logo/contrefuge.svg',
     type: 'Early-Stage Token',
     sector: 'Infrastructure',
     url: 'https://centrifuge.io/',
   },
   {
     id: 5,
-    name: '../../../public/images/funds-logo/vega.svg',
+    src: './images/funds-logo/vega.svg',
     type: 'Early-Stage Token',
     sector: 'DeFi',
     url: 'https://vega.xyz',
   },
   {
     id: 6,
-    name: '../../../public/images/funds-logo/swarm.svg',
+    src: './images/funds-logo/swarm.svg',
     type: 'Early-Stage Token',
     sector: 'Protocol',
     url: 'https://www.ethswarm.org/',
   },
   {
     id: 7,
-    name: '../../../public/images/funds-logo/human.svg',
+    src: './images/funds-logo/human.svg',
     type: 'Early-Stage Token',
     sector: 'Consumer',
     url: 'https://www.humanprotocol.org/',
   },
   {
     id: 8,
-    name: '../../../public/images/funds-logo/8.svg',
+    src: './images/funds-logo/8.svg',
     type: 'Early-Stage Token',
     sector: 'Consumer',
     url: '',
   },
   {
     id: 9,
-    name: '../../../public/images/funds-logo/qredo.svg',
+    src: './images/funds-logo/qredo.svg',
     type: 'Early-Stage Token',
     sector: 'Finance',
     url: 'https://www.qredo.com/',
   },
   {
     id: 10,
-    name: '../../../public/images/funds-logo/immutablex.svg',
+    src: './images/funds-logo/immutablex.svg',
     type: 'Early-Stage Token',
     sector: 'Infrastructure',
     url: 'https://www.immutable.com/',
   },
   {
     id: 11,
-    name: '../../../public/images/funds-logo/braintrust.svg',
+    src: './images/funds-logo/braintrust.svg',
     type: 'Early-Stage Token',
     sector: 'DeFi',
     url: 'https://www.usebraintrust.com/',
   },
   {
     id: 12,
-    name: '../../../public/images/funds-logo/biconomy.svg',
+    src: './images/funds-logo/biconomy.svg',
     type: 'Early-Stage Token',
     sector: 'Infrastructure',
     url: 'https://www.biconomy.com/',
   },
   {
     id: 13,
-    name: '../../../public/images/funds-logo/godsunchained.svg',
+    src: './images/funds-logo/godsunchained.svg',
     type: 'Early-Stage Token',
     sector: 'GameFi',
     url: 'https://godsunchained.com/',
   },
   {
     id: 14,
-    name: '../../../public/images/funds-logo/gari.svg',
+    src: './images/funds-logo/gari.svg',
     type: 'Early-Stage Token',
     sector: 'Network',
     url: 'https://gari.network/',
   },
   {
     id: 15,
-    name: '../../../public/images/funds-logo/zeitgeist.svg',
+    src: './images/funds-logo/zeitgeist.svg',
     type: 'Early-Stage Token',
     sector: 'Protocol',
     url: 'https://zeitgeist.pm/',
   },
   {
     id: 16,
-    name: '../../../public/images/funds-logo/guardians.svg',
+    src: './images/funds-logo/guardians.svg',
     type: 'Early-Stage Token',
     sector: 'GameFi',
     url: 'https://www.guildofguardians.com/',
   },
   {
     id: 17,
-    name: '../../../public/images/funds-logo/sit.country.svg',
+    src: './images/funds-logo/sit.country.svg',
     type: 'Early-Stage Token',
     sector: 'Metaverse',
     url: 'https://bit.country/',
   },
   {
     id: 18,
-    name: '../../../public/images/funds-logo/umee.svg',
+    src: './images/funds-logo/umee.svg',
     type: 'Early-Stage Token',
     sector: 'DeFi',
     url: 'https://umee.cc/',
   },
   {
     id: 19,
-    name: '../../../public/images/funds-logo/h',
+    src: './images/funds-logo/h.svg',
     type: 'Venture',
     sector: 'Infrastructure',
     url: '',
   },
   {
     id: 20,
-    name: '../../../public/images/funds-logo/spstake',
+    src: './images/funds-logo/spstake.svg',
     type: 'Early-Stage Token',
     sector: 'Protocol',
     url: 'https://pstake.finance/',
@@ -280,35 +280,35 @@ export const portfolio = [
 
   {
     id: 21,
-    name: '../../../public/images/funds-logo/agoric.svg',
+    src: './images/funds-logo/agoric.svg',
     type: 'Early-Stage Token',
     sector: 'Infrastructure',
     url: 'https://agoric.com/',
   },
   {
     id: 22,
-    name: '../../../public/images/funds-logo/stader.svg',
+    src: './images/funds-logo/stader.svg',
     type: 'Early-Stage Token',
     sector: 'DeFi',
     url: 'https://www.staderlabs.com/',
   },
   {
     id: 23,
-    name: '../../../public/images/funds-logo/nym.svg',
+    src: './images/funds-logo/nym.svg',
     type: 'Early-Stage Token',
     sector: 'Infrastructure',
     url: 'https://nymtech.net/',
   },
   {
     id: 24,
-    name: '../../../public/images/funds-logo/galxe.svg',
+    src: './images/funds-logo/galxe.svg',
     type: 'Early-Stage Token',
     sector: 'Infrastructure',
     url: 'https://galxe.com/',
   },
   {
     id: 25,
-    name: '../../../public/images/funds-logo/axelar.svg',
+    src: './images/funds-logo/axelar.svg',
     type: 'Early-Stage Token',
     sector: 'Protocol',
     url: 'https://axelar.network/',

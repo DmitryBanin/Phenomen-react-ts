@@ -10,7 +10,11 @@ import TeamPage from './pages/team-page/team-page';
 import ContactPage from './pages/contact-page/contact-page';
 import ErrorPage from './pages/error-page/error-page';
 import ScrollToTop from './utils/scroll-to-top';
-import { sectorsData, expertiseData } from './mocks/db';
+import {
+  sectorsCollapsibleData,
+  expertiseCollapsibleData,
+  portfolioData,
+} from './mocks/db';
 
 function App(): JSX.Element {
   return (
@@ -22,14 +26,23 @@ function App(): JSX.Element {
           <Route path='/invest' element={<InvestPage />} />
           <Route
             path='/sectors'
-            element={<SectorsPage sectorsData={sectorsData} />}
+            element={
+              <SectorsPage sectorsCollapsibleData={sectorsCollapsibleData} />
+            }
           />
           <Route
             path='/expertise'
-            element={<ExpertisePage expertiseData={expertiseData} />}
+            element={
+              <ExpertisePage
+                expertiseCollapsibleData={expertiseCollapsibleData}
+              />
+            }
           />
           <Route path='/strategies' element={<StrategiesPage />} />
-          <Route path='/portfolio' element={<PortfolioPage />} />
+          <Route
+            path='/portfolio'
+            element={<PortfolioPage portfolioData={portfolioData} />}
+          />
           <Route path='/team' element={<TeamPage />} />
           <Route path='/contacts' element={<ContactPage />} />
         </Route>

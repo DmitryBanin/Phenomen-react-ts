@@ -1,16 +1,17 @@
 import FaqCollapsible from '../faq-collapsible/faq-collapsible';
 import './faq-collapsible-list-style.css';
+import { CollapsibleDataType } from '../../types/type';
 
-type dataProps = {
-  collapsibleList: { title: string; desccription: string }[];
+type FaqCollapsibleListProps = {
+  collapsibleData: CollapsibleDataType;
 };
 
-function FaqCollapsibleList({ collapsibleList }: dataProps): JSX.Element {
+function FaqCollapsibleList({collapsibleData}: FaqCollapsibleListProps): JSX.Element {
   return (
     <section className='faq__container'>
       <div className='faq__item'>
-        {collapsibleList.map((collapsible, index) => (
-          <FaqCollapsible key={index} collapsible={collapsible} />
+        {collapsibleData.map((data, index) => (
+          <FaqCollapsible key={index} data={data} />
         ))}
       </div>
     </section>
