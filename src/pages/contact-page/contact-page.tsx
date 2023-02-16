@@ -17,7 +17,9 @@ function ContactPage(): JSX.Element {
                 </h3>
                 <p className='contact-us__desc'>
                   You can email our Capital Formation team at:
-                  narek.akopyan.j@gmail.com
+                  <a href='mailto:narek.akopyan.j@gmail.com'>
+                    narek.akopyan.j@gmail.com
+                  </a>
                 </p>
               </div>
             </div>
