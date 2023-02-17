@@ -14,6 +14,7 @@ import {
   sectorsCollapsibleData,
   expertiseCollapsibleData,
   portfolioData,
+  personsData,
 } from './mocks/db';
 
 function App(): JSX.Element {
@@ -43,7 +44,10 @@ function App(): JSX.Element {
             path='/portfolio'
             element={<PortfolioPage portfolioData={portfolioData} />}
           />
-          <Route path='/team' element={<TeamPage />} />
+          <Route
+            path='/team'
+            element={<TeamPage personsData={personsData} />}
+          />
           <Route path='/contacts' element={<ContactPage />} />
         </Route>
         <Route path='*' element={<ErrorPage />} />

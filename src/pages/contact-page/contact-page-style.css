@@ -1,28 +1,28 @@
 /* ===== CONTACT US ===== */
 
-.contact-us {
+.contact {
   max-width: 1003px;
   margin: 0 auto;
   padding-bottom: 200px;
 }
-.contact-us__title {
+.contact__title {
   font-family: 'NeoGram Extended ExtraBold';
   font-size: 90px;
   line-height: 122.4px;
   text-align: center;
   padding-bottom: 150px;
 }
-.contact-us__info-box {
+.contact__info-box {
   display: flex;
   justify-content: space-between;
   gap: 170px;
   height: 120px;
 }
-.contact-us__info {
+.contact__info {
   display: flex;
   justify-content: space-between;
 }
-.contact-us__info-title {
+.contact__info-title {
   font-family: 'NeoGram Extended ExtraBold';
   font-size: 40px;
   line-height: 54.4px;
@@ -34,27 +34,31 @@
   border-left: 2px solid #f3b932;
   margin: 0 20px 0 30px;
 }
-.contact-us__email-desc {
+.contact__email {
+  font-family: 'NeoGram Condensed Regular';
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  line-height: 25.44px;
 }
-.contact-us__email-headline {
+.contact__email a{
+  color: #fff;
+}
+.contact__headline {
   line-height: 1%;
+}
+.contact__desc {
+  width: 225px;
 }
 .headline-text {
   font-family: 'NeoGram Extended ExtraBold';
   font-size: 20px;
   line-height: 27.2px;
   text-transform: uppercase;
+  margin-bottom: 16px;
 }
-.contact-us__desc {
-  font-family: 'NeoGram Condensed Regular';
-  font-size: 20px;
-  line-height: 25.44px;
-  width: 225px;
-}
-.country__headline-list {
+.country__headline {
   display: flex;
   flex-direction: column;
   gap: 16px;

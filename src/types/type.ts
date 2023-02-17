@@ -10,3 +10,9 @@ export type CollapsibleDataType = {
   title: string;
   desccription: string;
 }[];
+
+export type PersonsDataType = {
+  src: string;
+  name: string;
+  role: string;
+};

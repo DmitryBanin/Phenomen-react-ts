@@ -1,4 +1,4 @@
-export const persons = [
+export const personsData = [
   {
     src: '../images/persons/1-narek-akopyan.png',
     name: 'NAREK AKOPYAN',
