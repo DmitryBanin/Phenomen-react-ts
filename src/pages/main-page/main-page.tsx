@@ -1,5 +1,6 @@
 import './main-page-style.css';
 import { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
 function MainPage(): JSX.Element {
   return (
@@ -14,12 +15,12 @@ function MainPage(): JSX.Element {
           blockchain companies, giving investors full access to the marketplace.
         </p>
         <nav className='main__nav'>
-          <a className='main__link' href='#'>
-            FUND
-          </a>
-          <a className='main__link' href='../page-6/page-6.html'>
+          <Link to={'/invest'} className='main__link'>
+            INVEST
+          </Link>
+          <Link to={'/portfolio'} className='main__link'>
             PORTFOLIO
-          </a>
+          </Link>
         </nav>
       </section>
 
