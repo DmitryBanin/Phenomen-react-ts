@@ -1,19 +1,25 @@
 import { PersonsDataType } from '../../types/type';
-import { Link } from 'react-router-dom';
+import Popup from '../popup/popup';
 
 type TeamItemProps = {
   data: PersonsDataType;
+  isOpenPopup: Boolean;
+  setOpenPopup: (value: boolean) => void;
 };
 
-function TeamItem({ data }: TeamItemProps): JSX.Element  {
-  
+function TeamItem({
+  data,
+  isOpenPopup,
+  setOpenPopup,
+}: TeamItemProps): JSX.Element {
+
   const { src, name, role } = data;
 
   return (
     <li className='team'>
-      <Link to={'/'} className='team__person-info'>
+      <a className='team__person-info' onClick={() => setOpenPopup(true)}>
         <div className='team__photo-box'>
-          <img className='team__photo' src={src} alt='photo' />
+          <img className='team__photo' src={src} alt='person from the team' />
         </div>
         <div className='team__desc-box'>
           <div className='team__desc'>
@@ -21,7 +27,12 @@ function TeamItem({ data }: TeamItemProps): JSX.Element  {
             <p className='team__role'>{role}</p>
           </div>
         </div>
-      </Link>
+      </a>
+      <Popup
+        isOpenPopup={isOpenPopup}
+        setOpenPopup={setOpenPopup}
+        data={data}
+      />
     </li>
   );
 }

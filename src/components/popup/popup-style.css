@@ -1,0 +1,145 @@
+/* === добавить hide-overflow тегу body === */
+
+.hide-overflow {
+  overflow: hidden;
+}
+
+/* === Popup === */
+
+.popup__container {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  z-index: 5;
+  background-color: #060114;
+  transition: left 0.3s ease 0s;
+  top: 0;
+  left: -100%;
+}
+.popup__container-active {
+  left: 0;
+}
+.popup__content {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 72px 50px 0 50px;
+}
+.popup__btn-close {
+  display: flex;
+  justify-content: flex-end;
+}
+.popup__close-icone::before {
+  content: url('../../../public/images/close-icone-white.svg');
+  cursor: pointer;
+}
+.popup__close-icone:hover::before {
+  opacity: 0.7;
+}
+.popup__info {
+  margin-top: 106px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.popup__person-name {
+  display: block;
+  text-align: left;
+  font-family: 'NeoGram Extended ExtraBold';
+  font-size: 60px;
+  line-height: 82px;
+}
+.popup__items {
+  max-width: 657px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.popup__item-title {
+  font-family: 'NeoGram Extended ExtraBold';
+  font-size: 20px;
+  line-height: 27.2px;
+  text-transform: uppercase;
+  position: relative;
+}
+.popup__border {
+  border-top: 2px solid #f3b932;
+  margin: 16px 0;
+}
+.popup__item-desc {
+  font-family: 'NeoGram Condensed Regular';
+  font-size: 20px;
+  line-height: 25.44px;
+}
+
+/* === Media === */
+
+/* TABLET */
+@media (max-width: 991.98px) {
+  .popup__content {
+    max-width: 450px;
+    padding: 20px 0 0 0;
+  }
+  .popup__close {
+    margin-bottom: 40px;
+  }
+  .popup__items {
+    font-family: 'NeoGram Extended ExtraBold';
+    width: 100%;
+    gap: 30px;
+  }
+  .popup__info {
+    flex-direction: column;
+  }
+  .popup__person-name {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .popup__items {
+    gap: 40px;
+  }
+  .popup__item-title {
+    font-size: 17.5px;
+    line-height: 23px;
+    text-transform: uppercase;
+  }
+  .popup__item-desc {
+    font-family: 'NeoGram Condensed Regular';
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/* MOBILE SMALL */
+@media (max-width: 479.98px) {
+  .popup__content {
+    max-width: 320px;
+  }
+  .popup__info {
+    flex-direction: column;
+  }
+  .popup__items {
+    max-width: 320px;
+    gap: 30px;
+  }
+  .popup__person-name {
+    text-align: left;
+    width: 150px;
+    font-size: 30px;
+    line-height: 41px;
+  }
+  .popup__item-title {
+    font-size: 15px;
+    line-height: 20.4px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  .popup__border {
+    margin: 10px 0;
+  }
+  .popup__item-desc {
+    font-family: 'NeoGram Condensed Regular';
+    font-size: 12px;
+    line-height: 15.26px;
+  }
+}

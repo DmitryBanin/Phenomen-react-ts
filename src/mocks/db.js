@@ -3,31 +3,37 @@ export const personsData = [
     src: '../images/persons/1-narek-akopyan.png',
     name: 'NAREK AKOPYAN',
     role: 'CEO Founder & Chief Investment Officer',
+    bio: 'He has more than 5 years of experience in investing and managing the cryptocurrency market, the main base of analysis is technical. He is the founder of Phenomen Ventures Capital.',
   },
   {
     src: '../images/persons/2-arthur-dmitriev.png',
     name: 'ARTHUR DMITRIEV',
     role: 'Strategic Advisor & IT Developer',
+    bio: 'Many people continue careers of their parents or grand parents but it is not the case with me.',
   },
   {
     src: '../images/persons/3-artem-perepechko.png',
     name: 'ARTEM PEREPECHKO',
     role: 'Chief Financial Officer & Investment Analyst',
+    bio: 'My favourite subjects in school are mathematics, physics, and, of course, computer science.',
   },
   {
     src: '../images/persons/4-mikhail-rusanov.png',
     name: 'MIKHAIL RUSANOV',
     role: 'Team Lead',
+    bio: 'I have a computer at home and can spend hours working at it. It is much easier to do things on computer, for example to write a composition.',
   },
   {
     src: '../images/persons/5-dmitry-stoletov.png',
     name: 'DMITRY STOLETOV',
     role: 'Project office manager',
+    bio: 'You can change the text as many times as you want and you don’t need to rewrite everything if you changed something.',
   },
   {
     src: '../images/persons/6-andrew-skob.png',
     name: 'ANDREW SKOB',
     role: 'Chief Engineer',
+    bio: 'I think that the profession of programmer can give many opportunities. Computers are the most rapidly changing sphere of modern technology.',
   },
 ];
 

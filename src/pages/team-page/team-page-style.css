@@ -72,77 +72,6 @@
   line-height: 19px;
 }
 
-/* ===== добавить hide-overflow тегу body ===== */
-
-.hide-overflow {
-  overflow: hidden;
-}
-
-/* ===== Popup ===== */
-
-.popup__container {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-  z-index: 5;
-  background-color: #060114;
-  transition: left 0.3s ease 0s;
-  left: -100%;
-}
-.popup__container--active {
-  left: 0;
-}
-.popup {
-  max-width: 1180px;
-  padding-top: 72px;
-  margin: 0 auto;
-}
-.popup__close {
-  display: flex;
-  justify-content: flex-end;
-}
-.popup__close-icone::before {
-  content: url('../../../public/images/close-icone-white.svg');
-  cursor: pointer;
-}
-.popup__close-icone:hover::before {
-  opacity: 0.7;
-}
-.popup__info {
-  padding-top: 106px;
-  display: flex;
-  justify-content: space-between;
-}
-.popup__info-name {
-  text-align: left;
-  max-width: 283px;
-  font-family: 'NeoGram Extended ExtraBold';
-  font-size: 60px;
-  line-height: 82px;
-}
-.popup__info-items {
-  max-width: 657px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-.popup__item-title {
-  font-family: 'NeoGram Extended ExtraBold';
-  font-size: 20px;
-  line-height: 27.2px;
-  text-transform: uppercase;
-}
-.popup__border {
-  border-top: 2px solid #f3b932;
-  margin: 16px 0;
-}
-.popup__item-desc {
-  font-family: 'NeoGram Condensed Regular';
-  font-size: 20px;
-  line-height: 25.44px;
-}
-
 /* ===== Media ===== */
 
 /* PC */
@@ -165,47 +94,12 @@
   .team {
     margin-bottom: 50px;
   }
-  .popup {
-    max-width: 750px;
-    padding-top: 20px;
-  }
-  .popup__close {
-    margin-bottom: 40px;
-  }
-  .popup__info-items {
-    font-family: 'NeoGram Extended ExtraBold';
-    width: 100%;
-    gap: 30px;
-  }
-  .popup__info-name {
-    text-align: left;
-    width: 283px;
-    font-size: 45px;
-    line-height: 60px;
-  }
-  .popup__info-items {
-    max-width: 425px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  .popup__item-title {
-    font-size: 17.5px;
-    line-height: 23px;
-    text-transform: uppercase;
-  }
-  .popup__item-desc {
-    font-family: 'NeoGram Condensed Regular';
-    font-size: 16px;
-    line-height: 20px;
-  }
 }
 
 /* MOBILE */
 @media (max-width: 767.98px) {
   .teams {
     justify-content: center;
-
   }
   .team {
     width: 300px;
@@ -261,38 +155,4 @@
     font-size: 18px;
     line-height: 22.9px;
   }
-  .popup {
-    max-width: 450px;
-  }
-  .popup__info {
-    flex-direction: column;
-  }
-  .popup__info-items {
-    width: 100%;
-    gap: 30px;
-  }
-  .popup__info-name {
-    text-align: left;
-    width: 150px;
-    font-size: 30px;
-    line-height: 41px;
-    margin-bottom: 40px;
-  }
-  .popup__item-title {
-    font-size: 15px;
-    line-height: 20.4px;
-    text-transform: uppercase;
-  }
-  .popup__border {
-    margin: 10px 0;
-  }
-  .popup__item-desc {
-    font-family: 'NeoGram Condensed Regular';
-    font-size: 12px;
-    line-height: 15.26px;
-  }
-}
-
-/* MOBILE SMALL */
-@media (max-width: 479.98px) {
 }

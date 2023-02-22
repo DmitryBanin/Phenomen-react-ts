@@ -15,4 +15,5 @@ export type PersonsDataType = {
   src: string;
   name: string;
   role: string;
+  bio: string;
 };
