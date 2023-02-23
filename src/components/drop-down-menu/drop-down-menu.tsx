@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { getStyleForNavLink } from '../../utils/get-style-for-nav-link';
+import { setStyleForNavLink } from '../../utils/set-style-for-nav-link';
 
 function DropDownMenu({ data }: any) {
   
@@ -7,7 +7,7 @@ function DropDownMenu({ data }: any) {
       <li className='menu__option'>
         <NavLink
           to={data.toLowerCase()}
-          style={getStyleForNavLink}
+          style={setStyleForNavLink}
           className='menu__option-link'
         >
           {data}

@@ -18,3 +18,7 @@ export const FundDropDownMenuList = ['SECTORS','EXPERTISE', 'STRATEGIES']
 
 export const AboutDropDownMenuList = ['TEAM', 'CONTACTS'];
 //
+
+export const bodyElement = document.getElementById('body');
+
+export const keyEscape = 'Escape';

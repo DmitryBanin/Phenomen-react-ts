@@ -3,13 +3,15 @@ import { PersonsDataType } from '../../types/type';
 
 type PopupProps = {
   isOpenPopup: Boolean;
-  setOpenPopup: (value: boolean) => void;
+  // setOpenPopup: (value: boolean) => void;
+  clickHandler: (value: any) => void;
   data: PersonsDataType;
 };
 
 function TeamPopup({
   isOpenPopup,
-  setOpenPopup,
+  // setOpenPopup,
+  clickHandler,
   data,
 }: PopupProps): JSX.Element {
   const { name, role, bio } = data;
@@ -25,8 +27,9 @@ function TeamPopup({
       <div className='popup__content'>
         <div className='popup__btn-close'>
           <a
+            href='#'
             className='popup__close-icone'
-            onClick={() => setOpenPopup(false)}
+            onClick={(evt) => clickHandler(evt)}
           ></a>
         </div>
         <div className='popup__info'>

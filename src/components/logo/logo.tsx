@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
-import { getStyleForNavLink } from '../../utils/get-style-for-nav-link';
+import { setStyleForNavLink } from '../../utils/set-style-for-nav-link';
 
 function Logo(): JSX.Element {
   return (
-    <NavLink to='/' style={getStyleForNavLink} className='header__logo'>
+    <NavLink to='/' style={setStyleForNavLink} className='header__logo'>
       <img
         src='../images/phenomen-logo.svg'
         alt='Phenomen logo'

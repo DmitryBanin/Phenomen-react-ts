@@ -1,5 +1,5 @@
 import { Outlet, NavLink } from 'react-router-dom';
-import { getStyleForNavLink } from '../../utils/get-style-for-nav-link';
+import { setStyleForNavLink } from '../../utils/set-style-for-nav-link';
 import Logo from '../../components/logo/logo';
 import HeaderNav from '../../components/header-nav/header-nav';
 import MobileMenu from '../../components/mobile-menu/mobile-menu';
@@ -10,9 +10,6 @@ function Layout(): JSX.Element {
       <header className='header'>
         <div className='header__container'>
           <Logo />
-          <a href='#' className='burger__button'>
-            <span></span>
-          </a>
           <MobileMenu />
           <HeaderNav />
         </div>
@@ -32,7 +29,7 @@ function Layout(): JSX.Element {
               <li className='footer__nav-item'>
                 <NavLink
                   to='/portfolio'
-                  style={getStyleForNavLink}
+                  style={setStyleForNavLink}
                   className='footer__link'
                 >
                   PORTFOLIO
@@ -54,7 +51,7 @@ function Layout(): JSX.Element {
               <li className='footer__nav-item'>
                 <NavLink
                   to='/expertise'
-                  style={getStyleForNavLink}
+                  style={setStyleForNavLink}
                   className='footer__link'
                 >
                   EXPERTISE
@@ -63,7 +60,7 @@ function Layout(): JSX.Element {
               <li className='footer__nav-item'>
                 <NavLink
                   to='/sectors'
-                  style={getStyleForNavLink}
+                  style={setStyleForNavLink}
                   className='footer__link'
                 >
                   SECTORS
@@ -72,7 +69,7 @@ function Layout(): JSX.Element {
               <li className='footer__nav-item'>
                 <NavLink
                   to='/strategies'
-                  style={getStyleForNavLink}
+                  style={setStyleForNavLink}
                   className='footer__link'
                 >
                   STRATEGIES
@@ -86,7 +83,7 @@ function Layout(): JSX.Element {
               <li className='footer__nav-item'>
                 <NavLink
                   to='/team'
-                  style={getStyleForNavLink}
+                  style={setStyleForNavLink}
                   className='footer__link'
                 >
                   TEAM
@@ -95,7 +92,7 @@ function Layout(): JSX.Element {
               <li className='footer__nav-item'>
                 <NavLink
                   to='/contacts'
-                  style={getStyleForNavLink}
+                  style={setStyleForNavLink}
                   className='footer__link'
                 >
                   CONTACTS

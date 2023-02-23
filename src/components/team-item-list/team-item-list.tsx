@@ -1,34 +1,39 @@
 import TeamItem from '../team-item/team-item';
 import { PersonsDataType } from '../../types/type';
 import { useState, useEffect } from 'react';
+import { keyEscape, bodyElement } from '../../const';
+import { setHiddenOverFlow } from '../../utils/setHiddenOverFlow';
 
 type TeamItemListProps = {
   personsData: PersonsDataType[];
 };
 
 function TeamItemList({ personsData }: TeamItemListProps): JSX.Element {
+  const [isOpenPopup, setOpenPopup] = useState(false);
 
-    const [isOpenPopup, setOpenPopup] = useState(false);
-    const KEY_ESCAPE = 'Escape';
+  const clickHandler = (evt: Event) => {
+    evt.preventDefault();
+    setOpenPopup((prevState) => !prevState);
+  };
 
-    const bodyElement = document.getElementById('body');
-    if (bodyElement !== null && isOpenPopup) {
-      bodyElement.style.overflow = 'hidden';
-    } else if (bodyElement !== null && !isOpenPopup) {
-      bodyElement.style.overflow = '';
+  setHiddenOverFlow(isOpenPopup, bodyElement);
+
+  const onKeyDownEsc = (evt: KeyboardEvent, escape: string) => {
+    if (evt.key === escape) {
+      evt.preventDefault();
+      setOpenPopup((prevState) => !prevState);
     }
+  };
 
   useEffect(() => {
-    const onKeyDownEsc = (evt: KeyboardEvent) => {
-      if (evt.key === KEY_ESCAPE) {
-        evt.preventDefault();
-        setOpenPopup((prevState) => !prevState);
-      }
-    };
-
-    document.addEventListener('keydown', onKeyDownEsc);
+    document.addEventListener('keydown', (evt) => {
+      onKeyDownEsc(evt, keyEscape);
+      setHiddenOverFlow(isOpenPopup, bodyElement);
+    });
     return () => {
-      document.removeEventListener('keydown', onKeyDownEsc);
+      document.removeEventListener('keydown', (evt) => {
+        onKeyDownEsc(evt, keyEscape);
+      });
     };
   }, [!isOpenPopup]);
 
@@ -40,7 +45,8 @@ function TeamItemList({ personsData }: TeamItemListProps): JSX.Element {
             key={index}
             data={data}
             isOpenPopup={isOpenPopup}
-            setOpenPopup={setOpenPopup}
+            // setOpenPopup={setOpenPopup}
+            clickHandler={clickHandler}
           />
         ))}
       </ul>

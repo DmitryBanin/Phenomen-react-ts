@@ -2,11 +2,11 @@ type StyleForNavLinkProps = {
   isActive: Boolean;
 };
 
-export const getStyleForNavLink = ({ isActive }: StyleForNavLinkProps) =>
+export const setStyleForNavLink = ({ isActive }: StyleForNavLinkProps) =>
   isActive
     ? {
         cursor: 'default',
         textDecoration: 'none',
-        color: 'inherit',
+        color: '#f3b932',
       }
     : undefined;

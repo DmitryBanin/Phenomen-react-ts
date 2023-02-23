@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { getStyleForNavLink } from '../../utils/get-style-for-nav-link';
+import { setStyleForNavLink } from '../../utils/set-style-for-nav-link';
 import DropDownMenuItems from '../drop-down-menu-items/drop-down-menu-items';
 import { FundDropDownMenuList, AboutDropDownMenuList } from '../../const';
 
@@ -11,7 +11,7 @@ function HeaderNav() {
         <li className='header__list-item'>
           <NavLink
             to='/invest'
-            style={getStyleForNavLink}
+            style={setStyleForNavLink}
             className='header__link'
           >
             INVEST
@@ -36,7 +36,7 @@ function HeaderNav() {
         <li className='header__list-item'>
           <NavLink
             to='/portfolio'
-            style={getStyleForNavLink}
+            style={setStyleForNavLink}
             className='header__link'
           >
             PORTFOLIO
