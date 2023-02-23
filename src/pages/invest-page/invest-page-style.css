@@ -1,20 +1,21 @@
-/* ===== (1) venture ===== */
+
+/* ===== venture ===== */
 
 .venture__container {
   display: flex;
   margin-top: 67px;
   margin-bottom: 125px;
-  gap: 190px;
+  justify-content: space-between;
 }
 .venture-capital {
-  max-width: 606px;
+  max-width: 605px;
 }
 .venture-capital__title {
   font-family: 'NeoGram Extended ExtraBold';
   font-size: 60px;
   line-height: 81px;
   margin-bottom: 66px;
-  width: 500px;
+  max-width: 500px;
 }
 .venture-capital__desc-list {
   font-family: 'NeoGram Condensed Regular';
@@ -25,10 +26,10 @@
   margin-bottom: 44px;
 }
 
-/* ===== (2) inquiry ===== */
+/* ===== inquiry ===== */
 
 .inquiry {
-  width: 100%;
+  width: 605px;
 }
 .inquiry__title {
   font-family: 'NeoGram Extended ExtraBold';
@@ -156,17 +157,11 @@
 
 /* ===== Media ===== */
 
-@media (max-width: 1439.98px) {
-  .main__container {
-    gap: 95px;
-  }
-}
 
 /* PC */
-@media (max-width: 1114.98px) {
-  .main__container {
+@media (max-width: 1309.98px) {
+  .venture__container {
     flex-direction: column;
-    gap: 0;
   }
   .venture-capital {
     width: 100%;
@@ -218,7 +213,7 @@
 
 /* MOBILE SMALL */
 @media (max-width: 479.98px) {
-  .main__container {
+  .venture__container {
     width: 320px;
   }
 }

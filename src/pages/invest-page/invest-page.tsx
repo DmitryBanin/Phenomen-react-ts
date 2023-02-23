@@ -1,9 +1,7 @@
 import './invest-page-style.css';
-import { Fragment } from 'react';
 
 function InvestPage() {
   return (
-    <Fragment>
       <section className='venture__container'>
         <div className='venture-capital'>
           <h1 className='venture-capital__title'>Phenomen Venture Capital</h1>
@@ -144,7 +142,6 @@ function InvestPage() {
           </form>
         </div>
       </section>
-    </Fragment>
   );
 }
 
