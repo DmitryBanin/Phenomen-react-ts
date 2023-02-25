@@ -3,8 +3,7 @@ import { setStyleForNavLink } from '../../utils/set-style-for-nav-link';
 import DropDownMenuItems from '../drop-down-menu-items/drop-down-menu-items';
 import { FundDropDownMenuList, AboutDropDownMenuList } from '../../const';
 
-function HeaderNav() {
-
+function HeaderNav(): JSX.Element {
   return (
     <nav className='header__nav'>
       <ul className='header__list'>
@@ -17,9 +16,11 @@ function HeaderNav() {
             INVEST
           </NavLink>
         </li>
-        <li className='header__list-item show'>
+        <li className='header__list-item'>
           <div className='header__list-item-arrow'>
-            <a href='#' className='header__link'>FUND</a>
+            <a href='#' className='header__link'>
+              FUND
+            </a>
             <img
               src='../images/arrow-down.svg'
               alt='arrow'

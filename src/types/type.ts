@@ -8,7 +8,7 @@ export type PortfolioDataType = {
 
 export type CollapsibleDataType = {
   title: string;
-  desccription: string;
+  description: string;
 }[];
 
 export type PersonsDataType = {

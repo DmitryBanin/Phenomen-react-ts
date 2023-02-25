@@ -8,16 +8,12 @@ export enum AppRoute {
   Portfolio = '/portfolio',
   Team = '/team',
   Contacts = '/contacts',
-  Error404 = '*',
+  Error = '*',
 }
-//
 
-export const FundDropDownMenuList = ['SECTORS','EXPERTISE', 'STRATEGIES']
-
-//
+export const FundDropDownMenuList = ['SECTORS', 'EXPERTISE', 'STRATEGIES']
 
 export const AboutDropDownMenuList = ['TEAM', 'CONTACTS'];
-//
 
 export const bodyElement = document.getElementById('body');
 

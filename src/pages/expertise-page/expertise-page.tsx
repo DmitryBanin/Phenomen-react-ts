@@ -4,7 +4,7 @@ import SummareOfTerms from '../../components/summare-of-terms/summare-of-terms';
 import FaqCollapsibleList from '../../components/faq-collapsible-list/faq-collapsible-list';
 
 type ExpertisePageProps = {
-  expertiseCollapsibleData: { title: string; desccription: string }[];
+  expertiseCollapsibleData: { title: string; description: string }[];
 };
 
 function ExpertisePage({

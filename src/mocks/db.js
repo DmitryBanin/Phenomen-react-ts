@@ -48,32 +48,32 @@ export const summeryOfTerms = {
 export const sectorsCollapsibleData = [
   {
     title: 'Blockchain',
-    desccription:
+    description:
       'Every day humanity generates about 2.5 quintillion bytes of different data. If data analytics answers questions about the past, Data Science literally looks to the future. With big data, applications are developed and models are created to better understand societies and their needs. Data science opens the door to the future',
   },
   {
     title: 'Artificial Intelligence',
-    desccription:
+    description:
       'Every day humanity generates about 2.5 quintillion bytes of different data. If data analytics answers questions about the past, Data Science literally looks to the future. With big data, applications are developed and models are created to better understand societies and their needs. Data science opens the door to the future',
   },
   {
     title: 'DeFi',
-    desccription:
+    description:
       'Every day humanity generates about 2.5 quintillion bytes of different data. If data analytics answers questions about the past, Data Science literally looks to the future. With big data, applications are developed and models are created to better understand societies and their needs. Data science opens the door to the future',
   },
   {
     title: 'Metaverse',
-    desccription:
+    description:
       'Every day humanity generates about 2.5 quintillion bytes of different data. If data analytics answers questions about the past, Data Science literally looks to the future. With big data, applications are developed and models are created to better understand societies and their needs. Data science opens the door to the future',
   },
   {
     title: 'WEB 3.0',
-    desccription:
+    description:
       'Every day humanity generates about 2.5 quintillion bytes of different data. If data analytics answers questions about the past, Data Science literally looks to the future. With big data, applications are developed and models are created to better understand societies and their needs. Data science opens the door to the future',
   },
   {
     title: 'Data Science',
-    desccription:
+    description:
       'Every day humanity generates about 2.5 quintillion bytes of different data. If data analytics answers questions about the past, Data Science literally looks to the future. With big data, applications are developed and models are created to better understand societies and their needs. Data science opens the door to the future',
   },
 ];
@@ -81,62 +81,62 @@ export const sectorsCollapsibleData = [
 export const expertiseCollapsibleData = [
   {
     title: 'Whitepaper',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
   {
     title: 'Technology',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
   {
     title: 'Media',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
   {
     title: 'Project partners',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
   {
     title: 'Tokenomics',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
   {
     title: 'Roadmap',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
   {
     title: 'Team',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
   {
     title: 'Cryptocurrency / Token',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
   {
     title: 'Technical analysis',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
   {
     title: 'Fundamental analysis',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
   {
     title: 'Computer analysis',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
   {
     title: 'Conclusion team Phenomen',
-    desccription:
+    description:
       'Studying the main project document, which sets out the rationale for developing a solution, its key parameters, features, and application in practice. The white paper is the main project document, where the team details the main goals and objectives of their solution.',
   },
 ];

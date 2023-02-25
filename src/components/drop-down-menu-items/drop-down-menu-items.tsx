@@ -1,10 +1,10 @@
 import DropDownMenu from '../drop-down-menu/drop-down-menu';
 
-type DropDownMenuProps = {
+type DropDownMenuItemsProps = {
   dropDownMenuData: string[];
 };
 
-function DropDownMenuItems({ dropDownMenuData }: DropDownMenuProps) {
+function DropDownMenuItems({ dropDownMenuData }: DropDownMenuItemsProps) {
   return (
     <ul className='menu__options menu__options-about'>
       {dropDownMenuData.map((data) => (

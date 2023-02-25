@@ -3,24 +3,24 @@ import { Fragment, useState, useRef } from 'react';
 type FaqCollapsibleProps = {
   data: {
     title: string;
-    desccription: string;
+    description: string;
   };
 };
 
 function FaqCollapsible({ data }: FaqCollapsibleProps): JSX.Element {
-  const { title, desccription } = data;
+  const { title, description } = data;
 
-  const [isOpen, setOpen] = useState(false);
+  const [isCollapsible, setCollapsible] = useState(false);
   const contentRef: any = useRef(null);
 
   const handleClick = () => {
-    setOpen(!isOpen);
+    setCollapsible(!isCollapsible);
   };
 
   return (
     <Fragment>
       <button
-        className={`collapsible ${isOpen ? 'collapsible-active' : ''}`}
+        className={isCollapsible ? 'collapsible collapsible-active' : 'collapsible'}
         onClick={handleClick}
       >
         {title}
@@ -29,12 +29,12 @@ function FaqCollapsible({ data }: FaqCollapsibleProps): JSX.Element {
         className='content'
         ref={contentRef}
         style={
-          isOpen
+          isCollapsible
             ? { maxHeight: contentRef.current.scrollHeight + 'px' }
             : { maxHeight: '0px' }
         }
       >
-        <p>{desccription}</p>
+        <p>{description}</p>
       </div>
     </Fragment>
   );

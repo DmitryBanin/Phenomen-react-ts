@@ -45,7 +45,6 @@ function TeamItemList({ personsData }: TeamItemListProps): JSX.Element {
             key={index}
             data={data}
             isOpenPopup={isOpenPopup}
-            // setOpenPopup={setOpenPopup}
             clickHandler={clickHandler}
           />
         ))}

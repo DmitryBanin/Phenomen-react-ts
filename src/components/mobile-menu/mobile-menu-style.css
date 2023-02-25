@@ -6,7 +6,6 @@
 
 /* MOBILE */
 @media (max-width: 767.98px) {
-  
   .burger__button {
     display: flex;
     position: relative;
@@ -79,6 +78,10 @@
     color: #070707;
     font-size: 20px;
     line-height: 26px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
   }
   .mobile-menu__btn:hover {
     color: #f3b932;
@@ -88,24 +91,12 @@
     color: #787878;
     padding-top: 20px;
   }
-  .collapsible-button {
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .collapsible-button:hover {
-    color: #f3b932;
-  }
-
   .mobile-menu__drop-down {
+    max-height: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
 }
-

@@ -16,41 +16,42 @@ import {
   portfolioData,
   personsData,
 } from './mocks/db';
+import {AppRoute} from './const'
 
 function App(): JSX.Element {
   return (
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path='/' element={<Layout />}>
+        <Route path={AppRoute.Layout} element={<Layout />}>
           <Route index element={<MainPage />} />
-          <Route path='/invest' element={<InvestPage />} />
+          <Route path={AppRoute.Invest} element={<InvestPage />} />
           <Route
-            path='/sectors'
+            path={AppRoute.Sectors}
             element={
               <SectorsPage sectorsCollapsibleData={sectorsCollapsibleData} />
             }
           />
           <Route
-            path='/expertise'
+            path={AppRoute.Expertise}
             element={
               <ExpertisePage
                 expertiseCollapsibleData={expertiseCollapsibleData}
               />
             }
           />
-          <Route path='/strategies' element={<StrategiesPage />} />
+          <Route path={AppRoute.Strategies} element={<StrategiesPage />} />
           <Route
-            path='/portfolio'
+            path={AppRoute.Portfolio}
             element={<PortfolioPage portfolioData={portfolioData} />}
           />
           <Route
-            path='/team'
+            path={AppRoute.Team}
             element={<TeamPage personsData={personsData} />}
           />
-          <Route path='/contacts' element={<ContactPage />} />
+          <Route path={AppRoute.Contacts} element={<ContactPage />} />
         </Route>
-        <Route path='*' element={<ErrorPage />} />
+        <Route path={AppRoute.Error} element={<ErrorPage />} />
       </Routes>
     </BrowserRouter>
   );

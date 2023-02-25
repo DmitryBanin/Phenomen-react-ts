@@ -1,17 +1,15 @@
 import { PersonsDataType } from '../../types/type';
-import Popup from '../popup/popup';
+import PopupPage from '../../pages/popup-page/popup-page';
 
 type TeamItemProps = {
   data: PersonsDataType;
   isOpenPopup: Boolean;
-  // setOpenPopup: (value: boolean) => void;
   clickHandler: (value: any) => void;
 };
 
 function TeamItem({
   data,
   isOpenPopup,
-  // setOpenPopup,
   clickHandler,
 }: TeamItemProps): JSX.Element {
   const { src, name, role } = data;
@@ -33,9 +31,8 @@ function TeamItem({
           </div>
         </div>
       </a>
-      <Popup
+      <PopupPage
         isOpenPopup={isOpenPopup}
-        // setOpenPopup={setOpenPopup}
         data={data}
         clickHandler={clickHandler}
       />
